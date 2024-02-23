@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>
+            Pendaftaran Konferensi
+        </title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                background-color: #ffffff;
+            }
+            body{
+                font-family: Arial, sans-serif;
+                padding: 50px;
+                backdrop-filter: blur(5px);
+               
+            }
+            h2 {
+                text-align: center;
+                margin-top: 25px;
+                color: rgb(0, 0, 0);
+                
+            }
+            form {
+                max-width: 400px;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background: rgba(0, 0, 0, 0,.5);
+                box-shadow: 0 0 10px 5px black;
+                color: rgb(0, 0, 0);
+                
+                
+
+            }
+            label {
+                display:block;
+                margin-bottom: 5px; 
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="cpwd"],
+            input[type="password"]{
+                width: 100%;
+                padding: 15px;
+                margin-bottom: 10px;
+                border: 1px solid #898383;
+                border-radius: 5px;
+            }
+            input[type="submit"]{
+                width: 100%;
+                padding: 10px;
+                background-color: rgb(0, 20, 170);
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                background-color: rgb(255, 0, 0);
+                transition: 1s;
+            }
+
+            .flag {
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 25px;
+            position: relative;
+            width: 220px;
+            height: 110px;
+            background: linear-gradient(180deg, transparent, transparent 44px, #c8102e 44px, #c8102e 66px, transparent 66px, transparent 100%), linear-gradient(90deg, transparent, transparent 99px, #c8102e 99px, #c8102e 121px, transparent 121px, transparent 100%), linear-gradient(180deg, transparent, transparent 37px, #FFF 37px, #FFF 73px, transparent 73px, transparent 100%), linear-gradient(90deg, transparent, transparent 92px, #FFF 92px, #FFF 128px, transparent 128px, transparent 100%), linear-gradient(26.56505deg, transparent, transparent 91px, #c8102e 91px, #c8102e 98px, transparent 98px, transparent 100%) 0 0/110px 100% no-repeat, linear-gradient(-26.56505deg, transparent, transparent 98px, #c8102e 98px, #c8102e 106px, transparent 106px, transparent 100%) 110px 0/110px 100% no-repeat, linear-gradient(26.56505deg, transparent, transparent 98px, #c8102e 98px, #c8102e 106px, transparent 106px, transparent 100%) 110px 55px/110px 100% no-repeat, linear-gradient(-26.56505deg, transparent, transparent 91px, #c8102e 91px, #c8102e 98px, transparent 98px, transparent 100%) 0 55px/110px 100% no-repeat, linear-gradient(27deg, transparent, transparent 87px, #FFF 87px, #FFF 109px, transparent 109px, transparent 100%), linear-gradient(153deg, transparent, transparent 87px, #FFF 87px, #FFF 109px, transparent 109px, transparent 100%), #012169;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h2>PENDAFTARAN KONFERENSI</h2>
+        <div class="flag"></div>
+        <form action="/submit-regestration" method="post">
+         <h2>Daftar</h2>
+            <label for="fname">Nama depan</label>
+            <input type="text" id="fname" name="fname"> <br>
+            <label for="fbelakang">Nama belakang</label>
+            <input type="text" id="fname" name="fname"> <br>
+            <label for="femail">Email</label>
+            <input type="email" id="email" name="email"> <br>
+            <label for="fpass">Password</label>
+            <input type="cpwd" id="pass" name="pass">
+             <br>
+            <label for="fkonfir">Ulangi Password</label>
+            <input type="password" id="passtry" name="passtry"> <br>
+            <label for="">
+            <input type="checkbox" value="Remember me">Menyetujui Persyaratan Layanan dan Kebijakan Privasi
+        </label>
+        <br>
+            <input type="submit" value="Daftar">
+               
+
+        </form>
+            
+        
+    
+    </body>
+</html>
